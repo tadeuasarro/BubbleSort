@@ -1,21 +1,26 @@
-def sorting
-  my_array = [10, 0, 9, 1, 8, 2, 7, 3, 6, -4, 5]
-  yield my_array
-end
-
-sorting do |my_arr|
-  my_arr.length.times do |arr_1|
-    (my_arr.length - (arr_1 + 1)).times do |arr|
-      if my_arr[arr + 1] != nil
-        if my_arr[arr] > my_arr[arr + 1]
-          swap = my_arr[arr + 1]
-          my_arr[arr + 1] = my_arr[arr]
-          my_arr[arr] = swap
+def sorting(array)
+  array.length.times do |arr_1|
+    (array.length - (arr_1 + 1)).times do |arr|
+      if array[arr + 1] != nil
+        if array[arr] > array[arr + 1]
+          swap = array[arr + 1]
+          array[arr + 1] = array[arr]
+          array[arr] = swap
         end
       end
     end
   end
-  print my_arr
+  array
 end
 
+my_array = [10, 0, 5, 8, 1, 3, 5, 2, 8, 5, 0, 3, 6, 5, 9]
 
+puts "Unsorted array:"
+print my_array
+puts ''
+
+sorting(my_array)
+
+puts "Sorted array:"
+print my_array
+puts ''
