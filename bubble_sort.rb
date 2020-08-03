@@ -4,7 +4,7 @@ def sorting(array)
       next if array[arr + 1].nil?
 
       next if array[arr] <= array[arr + 1]
-        
+
         swap = array[arr + 1]
         array[arr + 1] = array[arr]
         array[arr] = swap
