@@ -5,9 +5,9 @@ def sorting(array)
 
       next if array[arr] <= array[arr + 1]
 
-        swap = array[arr + 1]
-        array[arr + 1] = array[arr]
-        array[arr] = swap
+      swap = array[arr + 1]
+      array[arr + 1] = array[arr]
+      array[arr] = swap
     end
   end
   array
@@ -15,12 +15,12 @@ end
 
 my_array = [10, 0, 5, 8, 1, 3, 5, 2, 8, 5, 0, 3, 6, 5, 9]
 
-puts "Unsorted array:"
+puts 'Unsorted array:'
 print my_array
 puts ''
 
 sorting(my_array)
 
-puts "Sorted array:"
+puts 'Sorted array:'
 print my_array
 puts ''
