@@ -11,6 +11,7 @@ def bubble_sort_by(array)
       end
     end
   end
+  array
 end
 
 my_array = %w[why howdy constitution hi whatup]
@@ -19,10 +20,7 @@ puts 'Unsorted array:'
 print my_array
 puts ''
 
-bubble_sort_by(my_array) do |x, y|
-  x.length <=> y.length
-end
 
 puts 'Sorted array:'
-print my_array
+print bubble_sort_by(my_array) {|x, y| x <=> y}
 puts ''
