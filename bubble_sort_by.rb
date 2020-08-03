@@ -11,9 +11,10 @@ def bubble_sort_by(array)
       end
     end
   end
+  array
 end
 
-my_array = %w[why howdy constitution hi whatup]
+my_array = %w[what's is your job]
 
 puts 'Unsorted array:'
 print my_array
