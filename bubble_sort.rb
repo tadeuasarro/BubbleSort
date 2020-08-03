@@ -2,6 +2,7 @@ def sorting(array)
   array.length.times do |arr1|
     (array.length - (arr1 + 1)).times do |arr|
       next if array[arr + 1].nil?
+      
         if array[arr] > array[arr + 1]
           
           swap = array[arr + 1]
