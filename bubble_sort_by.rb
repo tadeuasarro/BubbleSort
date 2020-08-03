@@ -1,7 +1,7 @@
 def bubble_sort_by(array)
 	(array.length).times do |x|
 		(array.length - (x + 1)).times do |y|
-			if array[y + 1] != nil
+			if array[y + 1].nil?
 				case yield array[y], array[y + 1]
 				when 1
 					pivot = array[y]
