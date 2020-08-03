@@ -14,13 +14,12 @@ def bubble_sort_by(array)
   array
 end
 
-my_array = %w[what's is your job]
+my_array = %w[hello hey hi]
 
 puts 'Unsorted array:'
 print my_array
 puts ''
 
-
 puts 'Sorted array:'
-print bubble_sort_by(my_array) {|x, y| x <=> y}
+print bubble_sort_by(my_array) {|x, y| x.length <=> y.length}
 puts ''
