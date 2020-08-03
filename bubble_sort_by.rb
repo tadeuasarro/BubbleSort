@@ -21,5 +21,5 @@ print my_array
 puts ''
 
 puts 'Sorted array:'
-print bubble_sort_by(my_array) {| x, y | x.length <=> y.length}
+print bubble_sort_by(my_array) { |x, y| x.length <=> y.length }
 puts ''
