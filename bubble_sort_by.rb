@@ -1,16 +1,16 @@
 def bubble_sort_by(array)
-	(array.length).times do |x|
-		(array.length - (x + 1)).times do |y|
-			if array[y + 1].nil?
-				case yield array[y], array[y + 1]
-				when 1
-					pivot = array[y]
-					array[y] = array[y + 1]
-					array[y + 1] = pivot
-				end
-			end
-		end
-	end
+  array.length.times do |x|
+    array.length - (x + 1)).times do |y|
+		  if array[y + 1].nil?
+			  case yield array[y], array[y + 1]
+			  when 1
+				  pivot = array[y]
+				  array[y] = array[y + 1]
+				  array[y + 1] = pivot
+			  end
+		  end
+	  end
+  end
 end
 
 my_array = ['why', 'howdy', 'constitution', 'hi', 'whatup']
