@@ -2,12 +2,9 @@ def sorting(array)
   array.length.times do |arr1|
     (array.length - (arr1 + 1)).times do |arr|
       next if array[arr + 1].nil?
-
-      next if array[arr] <= array[arr + 1]
-
-      swap = array[arr + 1]
-      array[arr + 1] = array[arr]
-      array[arr] = swap
+      if array[arr] > array[arr + 1]
+        array[arr + 1], array[arr] = array[arr], array[arr + 1]
+      end
     end
   end
   array

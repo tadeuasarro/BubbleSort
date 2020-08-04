@@ -5,9 +5,7 @@ def bubble_sort_by(array)
 
       case yield array[y], array[y + 1]
       when 1
-        pivot = array[y]
-        array[y] = array[y + 1]
-        array[y + 1] = pivot
+        array[y + 1], array[y] = array[y], array[y + 1]
       end
     end
   end
